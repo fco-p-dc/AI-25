@@ -46,6 +46,7 @@ Se utilizan arboles de juego para representar una estructura donde los nodos son
 
 Es un algoritmo para encontrar y decidir cual es el mejor movimiento en un juego donde ambos jugadores hacen movimientos optimos. Primero se genera el arbol de juego hasta la profundidad deseada, se les asignan valores a los nodos hojas. Desde estos nodos se hace un backpropagation tomando el minimo para el peor escenario del jugador y el maximo para el mejor. Ejemplo: 
 
+```markdown
        MAX
       /   \
     MIN    MIN
@@ -67,7 +68,7 @@ Elegimos el maximo para el jugador:
     3	    2
    /  \    /  \
   3    5  2    9
-
+```
 # Poda de arboles
 
 Si el arbol es grande, minimax seria muy lento, imposible de procesar. Una forma de acelarlo es haciendo una poda de las ramas del arbol. 
@@ -80,6 +81,7 @@ Se atraviesa el arbol de juego usando Minimax, con una referencia a Alpha y Beta
 
 Ejemplo: 
 
+```markdown
        MAX
       /   \
     MIN    MIN
@@ -103,6 +105,7 @@ En el nodo raiz, se toma el mejor valor actual y se actualiza Alpha con el 3:
   3    5  2    9
 
 El minimo en la derecha encuentra un 2 para actualizar Beta, al compararlo con Alpha, se tiene que es menor, por lo que se procede a podar y no explorar el 9.
+
 
         3
       /   \
