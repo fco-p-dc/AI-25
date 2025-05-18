@@ -1,3 +1,6 @@
+---
+title: "Semana 01"
+---
 # Semana 01
 
 ## Historia de la Inteligencia Artificial
