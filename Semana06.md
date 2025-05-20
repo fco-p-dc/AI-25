@@ -24,19 +24,25 @@ Los arboles son la representacion grafica de todas las posibles secuencias de mo
 ### Minimax
 
 Algoritmo de busqueda recursiva, que busca determinar el mejor movimiento para un jugador, asumiendo que el oponente jugara de manera optima. Se intentara maximizar el movimiento del jugador y minimizar la utilidad del oponente, lo que nos da:
-$$
-\displaystyle\ V(s)= maxV(s') ~ para~el~jugador
-$$
+
+$$ V(s)= maxV(s') ~ para~el~jugador $$
+
 Se inicializa $$v=-\infty$$
+
 Se hace una iteracion para cada estado sucesor:
+
 $$v=max(v,valor-minimo(sucesor))$$
+
 y se regresa v. De otro modo,
-$$
-\displaystyle\ V(s')= minV(s') ~ para~el~oponente
-$$
+
+$$ V(s')= minV(s') ~ para~el~oponente $$
+
 Se inicializa $$v=+\infty$$
+
 Se hace una iteracion para cada estado sucesor:
+
 $$v=max(v,valor-maximo(sucesor))$$
+
 y se regresa v.
 
 Se pueden seguir los siguientes pasos:
