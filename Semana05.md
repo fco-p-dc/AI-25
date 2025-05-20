@@ -3,19 +3,19 @@
 ## Regresion logistica
 
 Es un algoritmo de clasificacion binaria. Se utiliza para predicir la probabilidad de que un elemento pertenezca a una de las dos clases posibles (ejemplo, 0 o 1). Utiliza:
-* Funcion Lineal: 
-$$
-\displaystyle\ \sigma(z)=\frac{1}{1+e^{-z}}
-$$
+* Funcion Lineal:
+
+$$ z=w^Tx+b$$
+
 * Funcion Sigmoide: es la funcion logistica que tiene forma de en S, comprime cualquier valor z en un rango entre 0 y 1. 
-$$
-\displaystyle\ z=w^Tx+b
-$$
+
+$$\sigma(z)=\frac{1}{1+e^{-z}}$$
+
 * Prediccion: Se toma una decision con base al valor anterior. Si $\sigma(z)\ge umbral$ predecimos 1; si $\sigma(z)<umbral$ predecimos 0. Siendo el umbral un parametro segun el problema.
 * Funcion de Perdida: Normalmente se utiliza la perdida de entropia o la perdida logaritmica. Con una etiqueta $y\in\{0,1\}$ y probabilidad predicha $p=\sigma(w^Tx+b)$, la perdida se define como:
-$$
-\displaystyle\ L(y,p) = -[ylog(p)+(1-y)log(1-p)]
-$$
+   
+$$L(y,p) = -[ylog(p)+(1-y)log(1-p)]$$
+
 Donde si p es cercana a cero cuando y=1 entonces la perdida es grande. La idea es minimizar la perdida de entropia.
 
 ## Torres de Hanoi
