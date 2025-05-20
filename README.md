@@ -2,6 +2,7 @@
 ## Repositorio de notas para la clase de Inteligencia Artificial
 
 Las notas estan acomodadas por el numero de semana en la que se vieron los temas. El link referencia el archivo markdown de las notas que se encuentran en el repositorio.
+Tambien se pueden observar las notas de forma dinamica en la [Github Page](https://fco-p-dc.github.io) de este usuario.
 
 | Semana        							                                     | Temas         |
 | ------------------------------------------------------------------------------ | ------------- |
@@ -16,3 +17,4 @@ Las notas estan acomodadas por el numero de semana en la que se vieron los temas
 | [Semana 09](https://github.com/fco-p-dc/AI-25/blob/main/Semana09.md)           | Satisfaccion de Restricciones |
 | [Semana 10](https://github.com/fco-p-dc/AI-25/blob/main/Semana10.md)           | Inferencia? |
 | [Redes Neuronales](https://github.com/fco-p-dc/AI-25/blob/main/Redes.md)       | Redes Neuronales |
+
