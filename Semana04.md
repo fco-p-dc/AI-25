@@ -5,9 +5,8 @@
 Es un clasificador simple, donde se utiliza una linea recta en el plano para separar clases. La decision del limite esta definida por un conjunto de parametros que determinan la orientacion y posicion.
 
 Con un clasificador binario general que:
-$$
-\displaystyle\ f_w(x) = sign(w.\phi(x))
-$$
+
+$$f_w(x) = sign(w.\phi(x))$$
 
 Donde $w$ son los pesos que determinan la orientacion
 ### Prediccion
@@ -39,9 +38,8 @@ Es una tecnica de estadistica usada para encontrar las relaciones entre caracter
 #### MSE
 
 El error cuadratico medio (MSE en ingles) es una funcion de perdida muy comun para la regresion lineal. Dice, dado un conjunto de $m$ datos de entrenamiento $\{(x_i, y_i)\}^m_i$ donde $x_i$ es la variable predictora o caracteristicas e $y_i$ es el valor objetivo real, la prediccion es $\hat{y} = w^Tx_i+b$. Para darnos una ecuacion:
-$$
-\displaystyle\ MSE = \frac{1}{m}\sum_i^m (\hat{y_i}-y_i)^2
-$$
+
+$$MSE = \frac{1}{m}\sum_i^m (\hat{y_i}-y_i)^2$$
 
 Con ello, se calcula el promedio de los cuadrados de las diferencias entre los valores predichos y los reales. Dandole mas peso a los errores grandes.
 
@@ -52,9 +50,7 @@ Se utiliza la optimizacion para encontrar los mejores valores para los parametro
 ### Gradiente
 
 Es un vector que apunta hacia la direccion del mayor incremento de la funcion. Se denota como 
-$$
-\displaystyle\ \triangledown J(w, b)
-$$
+$$\triangledown J(w, b)$$
 
 Donde J es una funcion de perdida, sus componentes son las derivadas parciales de la funcion con respecto a cada parametro.
 
@@ -62,11 +58,8 @@ Donde J es una funcion de perdida, sus componentes son las derivadas parciales d
 
 Es un algoritmo iterativo de optimizacion, usando el gradiente, buscamos lo contrario para encontrar el minimo de la funcion de perdida. Se comienza con valores iniciales aleatorios para los parametros, se actualizan en la direccion opuesta del gradiente, moviendo paso a paso haca la region donde la perdida es menor.
 
-$$
-\displaystyle\ w_{t+1} = w_t - \eta \triangledown _wJ(w_t,b_t)
-$$
-$$
-\displaystyle\ b_{t+1} = b_t - \eta \triangledown _bJ(w_t,b_t)
-$$
+$$ w_{t+1} = w_t - \eta \triangledown _wJ(w_t,b_t) $$
+
+$$ b_{t+1} = b_t - \eta \triangledown _bJ(w_t,b_t) $$
 
 Donde $\eta$ es la tasa de aprendizaje, que controla el tamaño del paso que damos en cada iteracion.
